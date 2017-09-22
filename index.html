@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>HTML5 Canvas Tests</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<link href="/favicon.ico" type="image/x-icon" rel="icon" />
+	<link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow" />
+	<meta name="distribution" content="global" />
+	<meta name="audience" content="all" />
+	<meta name="author" content="Eduardo Ojeda" />
+	<meta name="description" content="" />
+
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="canvas.css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="classes/World.js"></script>
+    <script type="text/javascript" src="classes/Vector.js"></script>
+    <script type="text/javascript" src="classes/Player.js"></script>
+    <script type="text/javascript" src="classes/Mass.js"></script>
+    <script type="text/javascript" src="classes/Ball.js"></script>
+
+	<script type="text/javascript">
+//<![CDATA[
+	$(function()
+	{
+		canvas = $("canvas").get(0);
+		ctx = canvas.getContext("2d");
+		init();
+	});
+//]]>
+	</script>
+</head>
+
+<body>
+	<canvas width="700" height="700"></canvas>
+    <a href="javascript:world.start();">Start</a>
+	<p id="console">
+		<b>Time: </b>
+		<span id="timer"></span>ms
+	</p>
+</body>
+</html>
